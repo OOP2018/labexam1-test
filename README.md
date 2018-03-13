@@ -23,7 +23,7 @@ Suppose your project is in a directory named `labexam1-yourname`.  Then do this:
 
 1. Make sure your project **does not** have a directory named `test`.  If you do, either rename it or delete it.
 
-2. Add this repository (labexam1-test) to your project into a **new directory named test** **inside your project directory**.  Use a command window for this. 
+2. Add this repository (labexam1-test) to your project into a **new directory named** `test` **inside your project directory**.  Use a command window for this. 
    ```shell
    cmd> cd workspace/labexam1-yourname
    cmd> git submodule add  https://github.com/OOP2018/labexam1-test.git  test
@@ -40,11 +40,11 @@ Suppose your project is in a directory named `labexam1-yourname`.  Then do this:
        new file:   .gitmodules
        new file:   test
    ```
-   You don't have to "add" or commit these.  Just use the test code in your IDE.
+   You don't have to "add" or commit these files.  Just use the test code in your IDE.
 4. In your preferred IDE, open your `labexam1-yourname` project and make 2 changes:
     * Add JUnit 4 library to the project.
-    * Add `test` as a new source directory.
-    * In Eclipse, you **right-click** on the project and choose *Build Path* -> *Configure Build Path* -> click *Libraries* tab -> *Add Library* -> JUnit 4.  Then select the *Source* tab, click *Add Folder...* button, and select the `test` directory. Now you should have 2 source folders: `src` and `test`.
+    * Add `test` as another source directory.
+    * In Eclipse, **right-click** on the project and choose *Build Path* -> *Configure Build Path* -> click *Libraries* tab -> *Add Library* -> JUnit 4.  Then select the *Source* tab, click *Add Folder...* button, and select the `test` directory. Now you should have 2 source folders: `src` and `test`.
 5. Run the `test/labexam1/TestRunner` class to run all tests.
 
 ## The Tests

@@ -21,7 +21,7 @@ labexam1-yourname/
 
 Suppose your project is in a directory named `labexam1-yourname`.  Then do this:
 
-1. Make sure your project *does not* have a directory named `test`.  If you do, either move it or use a different name (in step 2) for the "test" code from this submodule.
+1. Make sure your project **does not** have a directory named `test`.  If you do, either rename it or delete it.
 
 2. Add this repository (labexam1-test) to your project into a **new directory named test** **inside your project directory**.  Use a command window for this. 
    ```shell

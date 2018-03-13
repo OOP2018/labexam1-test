@@ -52,4 +52,4 @@ Suppose your project is in a directory named `labexam1-fatalaijon`.  Then do thi
 
 ## References
 
-** [git-submodule]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
+[git-submodule]: https://git-scm.com/book/en/v2/Git-Tools-Submodules

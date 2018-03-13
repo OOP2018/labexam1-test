@@ -8,16 +8,25 @@ A [submodule][git-submodule] lets you separate parts of a code into different Gi
 
 ## How to Use
 
-Add this test code *inside* your existing Git repository for "labexam1" as a *submodule*.  The submodule classes are a separate repo inside your repository.
+Add this test code *inside* your existing Git repository for "labexam1" as a *submodule*.  The submodule classes are a separate repo inside your repository.  When you get done, your project will look like this:
+```
+labexam1-yourname/
+   .gitignore
+   bin/            - compiler output (may be "build" or "out")
+   src/            - your source code
+   src/labexam1/   - source package labexam1, contains your classes
+   test/           - Git Submodule for labexam1-test repo
+   test/labeam1/   - test package for JUnit test classes (part of submodule)
+```
 
-Suppose your project is in a directory named `labexam1-fatalaijon`.  Then do this:
+Suppose your project is in a directory named `labexam1-yourname`.  Then do this:
 
 1. Make sure your project *does not* have a directory named `test`.  If you do, either move it or use a different name (in step 2) for the "test" code from this submodule.
 
-2. Add this repository (labexam1-test) to your project **into a new directory named test**.  Use a command window for this. 
+2. Add this repository (labexam1-test) to your project into a **new directory named test** **inside your project directory**.  Use a command window for this. 
    ```shell
-   cmd> cd workspace/labexam1-fatalaijon
-   cmd> git submodule add git@github.com:OOP2018/labexam1-test.git test
+   cmd> cd workspace/labexam1-yourname
+   cmd> git submodule add  https://github.com/OOP2018/labexam1-test.git  test
    Cloning into 'test'...
    ...
    Receiving objects: 100% (9/9), 6.7KiB

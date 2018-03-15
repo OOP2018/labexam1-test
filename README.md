@@ -23,8 +23,9 @@ Suppose your project is in a directory named `labexam1-yourname`.  Then do this:
 
 1. Make sure your project **does not** have a directory named `test`.  If you do, either rename it or delete it.
 
-2. Use `git submodule` to add this repository (labexam1-test) to your project into a **new directory named** `test`.  The directory will be inside your project, so you change directory ("cd") to your project directory before running "git submodule". Use a command window for this. 
+2. Use `git submodule` to add this repository (labexam1-test) to your project into a new directory named `test` **inside** your project root directory. Before running the `git submodule` command you should change directory ("cd") to your labexam1 project directory.  Using a command window, run these commands:
    ```shell
+   # Change to your project directory (may be different than shown here)
    cmd> cd workspace/labexam1-yourname
    cmd> git submodule add  https://github.com/OOP2018/labexam1-test.git  test
    Cloning into 'test'...
